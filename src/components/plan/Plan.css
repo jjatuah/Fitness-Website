@@ -1,0 +1,86 @@
+.plan {
+  padding: 1.3rem;
+  text-align: center;
+  border: var(--border);
+  border-radius: .3rem;
+}
+
+.plan > h3 {
+  color: var(--white);
+  font-size: 1.2rem;
+  padding: .5rem 0;
+  font-weight: 200;
+}
+
+.price {
+  padding: .5rem 0;
+  font-size: 3.2rem;
+  color: var(--white);
+}
+
+.price > span {
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+
+.plan > a {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  background: var(--orange);
+  color: var(--white);
+  cursor: pointer;
+  border-radius: 0.3rem;
+  font-size: 1.0rem;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.plan > a:hover {
+  color: var(--orange);
+  background: var(--white);
+}
+
+.list {
+  padding-top: 1rem;
+}
+
+.list > p {
+  font-size: .9rem;
+  color: var(--white);
+  padding: 0.5rem 0;
+  line-height: 1.2;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  justify-content: center;
+}
+
+@media (max-width: 791px) {
+  .plan {
+    padding: 1rem;
+  }
+
+  .price {
+    font-size: 2.8rem;
+  }
+
+  .plan > a {
+    font-size: 0.8rem;
+  }
+
+  .list {
+    padding-top: 0.6rem;
+  }
+
+  .list > p {
+    line-height: 1;
+    padding: 0.4rem 0;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .plan {
+    padding: 0.3rem 0;
+  }
+}

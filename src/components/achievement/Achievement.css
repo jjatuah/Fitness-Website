@@ -1,0 +1,37 @@
+.achievement {
+  padding: 15px;
+  padding-left: 50px;
+  padding-right: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  text-align: center;
+}
+
+.box > h3 {
+  font-size: 2.0rem;
+  color: var(--orange);
+}
+
+.box > p {
+  color: var(--white);
+  text-transform: capitalize;
+}
+
+@media (max-width: 850px) {
+  .achievement {
+    padding: 15px 25px;
+  }
+
+  .box > h3 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .box > h3 {
+    font-size: 1.5rem;
+  }
+}

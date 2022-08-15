@@ -1,0 +1,66 @@
+.member {
+  height: 30rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.member > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.details {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: var(--white);
+  padding: 0.4rem 1rem;
+}
+
+.details > span {
+  font-size: 0.9rem;
+  color: var(--orange);
+  text-transform: capitalize;
+}
+
+.details > h3 {
+  font-size: 1.2rem;
+  color: var(--black);
+  font-weight: 200;
+  text-transform: capitalize;
+}
+
+.socials {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: var(--orange);
+  padding: 0.5rem;
+}
+
+.socials > a {
+  font-size: 1.2rem;
+  color: var(--white);
+  margin: 0 0.6rem;
+}
+
+@media (max-width: 450px) {
+  .details > span {
+    font-size: 0.8rem;
+  }
+
+  .details > h3 {
+    font-size: .95rem;
+  }
+
+  .socials > a {
+    font-size: .95rem;
+  }
+}
+
+@media (max-width: 300px) {
+  .member > img {
+    object-fit: contain;
+  }
+}
